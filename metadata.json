@@ -1,0 +1,6 @@
+{
+  "name": "DharmaAI - Sacred Journeys",
+  "description": "Discover sacred pilgrimage sites and let AI guide your spiritual journey with reverence, optimized darshan timings, and senior-friendly planning.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

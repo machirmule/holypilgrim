@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "EB Garamond", serif;
+  --font-sans: "Manrope", sans-serif;
+  --font-display: "EB Garamond", serif;
+  
+  --color-primary: #f59e0b;
+  --color-primary-hover: #d97706;
+  --color-primary-container: #ff9933;
+  --color-primary-fixed: #fef3c7;
+  --color-primary-fixed-dim: #fde68a;
+  
+  --color-surface: #080808;
+  --color-surface-dim: #050505;
+  --color-surface-bright: #12141a;
+  --color-surface-lowest: #000000;
+  --color-surface-low: #0c0e14;
+  --color-surface-mid: #141721;
+  --color-surface-high: #1c202e;
+  --color-surface-highest: #262b3d;
+  
+  --color-outline-sand: #334155;
+  --color-outline-stone: #64748b;
+  --color-vermilion: #ef4444;
+}
+
+@layer base {
+  body {
+    background-color: #080808;
+    color: #f1f5f9;
+    font-family: 'Manrope', sans-serif;
+  }
+
+  h1, h2, h3, .font-serif-heading {
+    font-family: 'EB Garamond', serif;
+  }
+}
+
+.shadow-glow {
+  box-shadow: 0 0 25px rgba(245, 158, 11, 0.15);
+}
+
+.shadow-glow-indigo {
+  box-shadow: 0 0 25px rgba(99, 102, 241, 0.2);
+}
+
+.shadow-soft {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.bg-bento-grid {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.07) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.bento-card {
+  background-color: rgba(18, 21, 30, 0.7);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(51, 65, 85, 0.6);
+  border-radius: 1.5rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.bento-card:hover {
+  border-color: rgba(245, 158, 11, 0.5);
+  box-shadow: 0 0 30px rgba(245, 158, 11, 0.12);
+}
+
